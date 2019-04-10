@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+This is an example HTML that shows how WebGazer can be used on a website.
+This file provides the additional features:
+  * An integrated, intuitive and sleek action bar with an informative "help" module accessible at all times
+  * Structured 9-point calibration system
+  * Accuracy measure of predictions based on calibration process
+  * Video feedback regarding face positioning
+  * Improved eye predictions visible to the user
+Instructions on use can be found in the README repository.
+-->
+<html>
+    <head>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+        <TITLE>WebGazer S.2</TITLE>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script async type="text/javascript" src="./webgazer.js"></script>
+    </head>
+
+    <body>
+      <canvas id="plotting_canvas" width="500" height="500" style="cursor:crosshair;"></canvas>
+
+        <script src="./main.js"></script>
+        <script src="./precision_calculation.js"></script>
+        <script src="./precision_store_points.js"></script>
+
+        <nav id="webgazerNavbar" class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header"></div>
+          </div>
+        </nav>
+
+        <div class="container" >
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="./resize_canvas.js"></script>
+        
+    </body>
+</html>
